@@ -4,7 +4,6 @@ package com.example.myapplication;
 
 
 import android.Manifest;
-//import android.support.v7.app.ActionBarActivity;
 import android.app.ActionBar;
 import android.app.DownloadManager;
 import android.content.pm.PackageManager;
@@ -14,7 +13,6 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
-//import android.app.Activity;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Menu;
@@ -25,9 +23,6 @@ import android.webkit.DownloadListener;
 import android.webkit.URLUtil;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-//import android.widget.Button;
-//import android.widget.EditText;
-//import android.widget.ImageButton;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -36,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
 
     WebView webView;
 
-    //String url = "https://drive.google.com/file/d/0B_rn9jkskDivX1dfZ3B3M2JVX2M/view?usp=drive_web";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -109,16 +103,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if(item.getItemId() == R.id.favourites_page){
-            //System.out.println("Hiii");
             Toast.makeText(this,"Created by Dipantan Chakraborty",Toast.LENGTH_SHORT).show();
         }
         return super.onOptionsItemSelected(item);
     }
-
-
-    //ActionBar actionbar = getActionBar();
-
-    //Setting up Action bar color using # color code.
- //actionbar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#00cfaa")));
 }
 
